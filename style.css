@@ -1,0 +1,134 @@
+:root{
+  --fc-brown:hsl(14, 45%, 36%);
+  --fc-purple:hsl(332, 51%, 32%);
+
+  --bc-rose: hsl(330, 100%, 98%);
+  --bc-egg: hsl(30, 54%, 90%);
+
+  --fc-gray: hsl(30, 18%, 87%);
+  --fc-darkgray:hsl(24, 5%, 18%);
+  --fc-brown2:hsl(30, 10%, 34%);
+
+  --ff-font1: 'Outfit', sans-serif;
+  --ff-font2: 'Young Serif', sans-serif;
+  --fw-light: 400;
+  --fw-medium: 600;
+  --fw-heavy: 700;
+
+  --fs-200: 0.9275rem;
+  --fs-400: 1.25rem;
+  --fs-600: 1.625rem;
+  --fs-800: 2rem;
+  --fs-900: 2.5rem;
+}
+
+
+img{
+  width: 100%;
+  border-radius: 20px;
+}
+p{
+  font-size: 16px;
+  font-weight: var(--fw-light);
+}
+li{
+  font-size: 16px;
+  font-weight: var(--fw-light);
+}
+body{
+  background-color: var(--bc-egg);
+  margin: 0;
+  padding: 0;
+  font-family: var(--ff-font1);
+}
+.container{
+  max-width: 48%;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 30px;
+  margin-block: 4rem;
+}
+.container--small{
+  max-width: 90%;
+  margin: 0 auto;
+}
+h1{
+  font-family: var(--ff-font2);
+  font-size: var(--fs-900);
+  color: var(--fc-darkgray);
+  font-weight: var(--fw-heavy);
+}
+h3{
+  color: var(--fc-purple);
+}
+h2{
+  font-size: var(--fs-800);
+  font-weight: var(--fw-medium);
+  color: var(--fc-brown);
+}
+.img-container{
+  padding-top: 2rem;
+  padding-inline: 2rem;
+}
+.prep-time{
+  max-width: 90%;
+  margin: 0 auto;
+  margin-block: 3rem;
+}
+.prep-time ul li{
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+}
+.gray-text{
+  color: var(--fc-darkgray);
+  font-weight: var(--fw-heavy);
+}
+.ingredients ul li{
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+}
+.instruct-list ol li{
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+  line-height: 1.5rem;
+}
+.grid-box{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-bottom: 2rem;
+}
+.grid-box ul li{
+  list-style-type: none;
+  border-bottom: solid;
+  border-bottom-color: var(--fc-gray);
+  border-bottom-width: 1px;
+  padding-block: 1rem;
+}
+.box2 ul li{
+  color: var(--fc-brown);
+  font-weight: var(--fw-heavy);
+}
+hr{
+  color: var(--fc-gray);
+  width: 90%;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 600px) {
+  .container{
+    max-width: 100%;
+    border-radius: 0px;
+    margin-block: 0px;
+  }
+  img{
+    border-radius: 0px;
+  }
+  .container--small{
+    max-width: 100%;
+    padding-left: 1rem;
+    margin: 0;
+    margin: 0 auto;
+  }
+  .img-container{
+    padding-top: 0px;
+  }
+}
